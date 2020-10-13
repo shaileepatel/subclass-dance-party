@@ -1,11 +1,15 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('.lineUpButton').on('click', function(event) {
-    for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].lineUp();
-    }
-  });
+  // $('.lineUpButton').on('click', function(event) {
+  //   for (var i = 0; i < window.dancers.length; i++) {
+  //     window.dancers[i].lineUp();
+  //   }
+  // });
+
+  // $('document').on('mouseover', '.zoomInAndOut', function () {
+  //   $(this).addClass('zoom');
+  // });
 
   $('.addDancerButton').on('click', function(event) {
 

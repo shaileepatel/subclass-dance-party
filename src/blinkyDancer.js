@@ -3,10 +3,8 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<img width="64" src="https://i.postimg.cc/gjVf0J26/harry.png" alt="" />');
-  if (this.step !== undefined) {
-    this.step();
-  }
+  this.$node = $('<img class="zoomInAndOut" width="64" src="https://i.postimg.cc/gjVf0J26/harry.png" alt="" />');
+  this.step();
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);

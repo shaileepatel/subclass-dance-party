@@ -11,15 +11,15 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+  padding:auto;
+  float:center;
 }
 .topbar{
   height:32px;
   background-color: #555;
 }
 .title{
-  background-color: #777;
+  background-color: black;
 }
 .dancer{
   border:10px solid red;
@@ -60,3 +60,43 @@ body * {margin: 2em 2em 0; text-align: center; vertical-align: middle; font-fami
 }
 
 @keyframes rotate { 100% { transform:rotate(360deg); } }
+
+.zoom{
+  height:30%;
+  width:30%;
+  background-position:center;
+  background-size:cover;
+}
+.zoom{
+   -webkit-animation: zoomeffect 10s infinite;
+   -moz-animation: zoomeffect 10s infinite;
+   animation: zoomeffect 10s infinite;
+}
+@-webkit-keyframes zoomeffect{
+		0%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+		50%{
+			background-position:center;
+		  transform:scale(2,2);
+		}
+		100%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+}
+@keyframes zoomeffect{
+		0%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+		50%{
+			background-position:center;
+		  transform:scale(2,2);
+		}
+		100%{
+			background-position:center;
+		  transform:scale(1,1);
+		}
+}
