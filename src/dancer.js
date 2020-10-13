@@ -30,8 +30,8 @@ Dancer.prototype.setPosition = function(top, left) {
 
 Dancer.prototype.lineUp = function() {
   var lineUpSetting = {
-    top: '500 px',
-    left: '200 px',
+    top: '800 px',
+    left: '400 px',
   };
   this.$node.css(lineUpSetting);
 };

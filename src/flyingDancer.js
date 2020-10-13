@@ -3,7 +3,7 @@ var FlyingDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<img class="fly" width="64" src="https://i.postimg.cc/4N48cw80/voldie.png" alt="" />');
+  this.$node = $('<img class="fly" width="130" src="https://i.postimg.cc/4N48cw80/voldie.png" alt="" />');
   this.step();
 };
 

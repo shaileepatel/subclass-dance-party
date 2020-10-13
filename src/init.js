@@ -2,13 +2,19 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.lineUpButton').on('click', function(event) {
-    for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].lineUp();
-    }
-  });
-
-  $('document').on('mouseover', '.zoomInAndOut', function () {
-    $(this).addClass('zoom');
+    console.log('clicked');
+    // for (var i = 0; i < window.dancers.length; i++) {
+    //   window.dancers[i].lineUp();
+    // }
+    $('.fly').animate({
+      top: '550',
+    });
+    $('.jump').animate({
+      top: '550',
+    });
+    $('.zoomInAndOut').animate({
+      top: '550',
+    });
   });
 
   $('.addDancerButton').on('click', function(event) {

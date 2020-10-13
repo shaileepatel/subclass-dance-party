@@ -3,7 +3,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<img class="zoomInAndOut" width="64" src="https://i.postimg.cc/gjVf0J26/harry.png" alt="" />');
+  this.$node.addClass('zoomInAndOut').prepend('<img width = 130 src="https://i.postimg.cc/gjVf0J26/harry.png" alt="" />');
   this.step();
 };
 

@@ -3,8 +3,10 @@ var JumpingDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<img class="jump" width="64" src="https://i.postimg.cc/hGGg39PZ/albie.png" alt="" />');
-
+  this.$node.addClass('jump').prepend('<img width = 94 src="https://i.postimg.cc/hGGg39PZ/albie.png" alt="" />');
+  this.$node.mouseover(function() {
+    $(this).find('img').toggleClass('zoom');
+  });
   this.step();
 };
 
