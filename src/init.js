@@ -1,6 +1,12 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  $('.lineUpButton').on('click', function(event) {
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
+  });
+
   $('.addDancerButton').on('click', function(event) {
 
     /* This function sets up the click handlers for the create-dancer
@@ -28,6 +34,7 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
     console.log(dancer);
     $('body').append(dancer.$node);
   });
