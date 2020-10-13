@@ -2,7 +2,6 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.lineUpButton').on('click', function(event) {
-    console.log('clicked');
     // for (var i = 0; i < window.dancers.length; i++) {
     //   window.dancers[i].lineUp();
     // }
@@ -15,6 +14,20 @@ $(document).ready(function() {
     $('.zoomInAndOut').animate({
       top: '550',
     });
+  });
+
+  $('.battleButton').on('click', function(event) {
+    console.log('battle on');
+    $('.jump').animate({
+      left: '75',
+    });
+    $('.zoomInAndOut').animate({
+      left: '75',
+    });
+    $('.fly').animate({
+      left: '400',
+    });
+    $('body').addClass('newbg');
   });
 
   $('.addDancerButton').on('click', function(event) {
